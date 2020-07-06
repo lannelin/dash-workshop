@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ## Run
 
-Run individual examples from bash
+Run individual examples from the command line
 
 ```bash
 python examples/X_example.py
