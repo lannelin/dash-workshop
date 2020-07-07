@@ -6,7 +6,15 @@ Code has been lifted with some modification from https://dash.plotly.com/
 
 ## Setup
 
-Create and activate a virtual environment (bash)
+Clone this repo and `cd` into it
+
+```bash
+git clone https://github.com/lannelin/dash-workshop.git
+cd dash-workshop
+```
+
+
+Create and activate a virtual environment (bash & zsh)
 
 ```bash
 python -m venv env
