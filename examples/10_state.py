@@ -15,10 +15,10 @@ app.layout = html.Div([
 ])
 
 
-@app.callback(Output('output-state', 'children'),
-              [Input('submit-button-state', 'n_clicks'),
+@app.callback(output=Output('output-state', 'children'),
+              inputs=[Input('submit-button-state', 'n_clicks'),
                Input('input-1-state', 'value')],
-              [State('input-2-state', 'value')])
+              state=[State('input-2-state', 'value')])
 def update_output(n_clicks, input1, input2):
     return u'''
         The Button has been pressed {} times,

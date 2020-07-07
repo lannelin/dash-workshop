@@ -18,8 +18,8 @@ app.layout = html.Div([
 
 
 @app.callback(
-    Output(component_id='my-output', component_property='children'),
-    [Input(component_id='my-input', component_property='value')]
+    output=Output(component_id='my-output', component_property='children'),
+    inputs=[Input(component_id='my-input', component_property='value')]
 )
 def update_output_div(input_value):
     return 'Output: {}'.format(input_value)
